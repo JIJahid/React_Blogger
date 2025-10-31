@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Category() {
+function Category({setCategoryID}) {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     fetch("category.json")
@@ -11,6 +11,10 @@ function Category() {
     <div>
       {categories.map((category, i) => (
         <button
+          onClick={()=>{
+            
+            setCategoryID(category.id)
+          }}
           className="btn btn-error text-white m-1 w-48"
           key={i}
         >

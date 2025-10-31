@@ -5,7 +5,7 @@ import { AiOutlineSlack } from "react-icons/ai";
 
 function Navber() {
   return (
-    <div className=" bg-base-100 shadow-sm">
+    <div className=" bg-base-100 shadow-sm z-10 sticky top-0">
       <div className="container justify-between mx-auto navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -72,7 +72,7 @@ function Navber() {
               <a>Success</a>
             </li>
             <li>
-              <details>
+              <details className="z-20">
                 <summary>Page</summary>
                 <ul className="p-2">
                   <li>
